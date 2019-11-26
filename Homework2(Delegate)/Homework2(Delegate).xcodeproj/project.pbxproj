@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		024BDBDB238CFCE20087174D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027CBD53238AAF57001A4223 /* ViewController.swift */; };
+		024BDBDC238CFCE20087174D /* ISSWaiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027CBD71238AB1E9001A4223 /* ISSWaiter.swift */; };
+		024BDBDD238CFCE20087174D /* ISSWaiterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027CBD73238AB346001A4223 /* ISSWaiterProtocol.swift */; };
+		024BDBDE238CFCE20087174D /* ISSKitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027CBD75238AB404001A4223 /* ISSKitchen.swift */; };
+		024BDBE0238CFE2B0087174D /* ISSWaiterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDBDF238CFE2B0087174D /* ISSWaiterTests.swift */; };
+		024BDBE2238CFEE10087174D /* WaiterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDBE1238CFEE10087174D /* WaiterMock.swift */; };
+		024BDBE4238D01DA0087174D /* ISSKitchenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDBE3238D01DA0087174D /* ISSKitchenProtocol.swift */; };
+		024BDBE6238D01F10087174D /* ISSKitchenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDBE3238D01DA0087174D /* ISSKitchenProtocol.swift */; };
+		024BDBE9238D064F0087174D /* KitchenSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDBE8238D064F0087174D /* KitchenSpy.swift */; };
+		024BDBEC238D069E0087174D /* ISSKitchenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BDBEB238D069E0087174D /* ISSKitchenTests.swift */; };
 		027CBD52238AAF57001A4223 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027CBD51238AAF57001A4223 /* AppDelegate.swift */; };
 		027CBD54238AAF57001A4223 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027CBD53238AAF57001A4223 /* ViewController.swift */; };
 		027CBD59238AAF59001A4223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027CBD58238AAF59001A4223 /* Assets.xcassets */; };
@@ -28,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		024BDBDF238CFE2B0087174D /* ISSWaiterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSWaiterTests.swift; sourceTree = "<group>"; };
+		024BDBE1238CFEE10087174D /* WaiterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaiterMock.swift; sourceTree = "<group>"; };
+		024BDBE3238D01DA0087174D /* ISSKitchenProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSKitchenProtocol.swift; sourceTree = "<group>"; };
+		024BDBE8238D064F0087174D /* KitchenSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenSpy.swift; sourceTree = "<group>"; };
+		024BDBEB238D069E0087174D /* ISSKitchenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSKitchenTests.swift; sourceTree = "<group>"; };
 		027CBD4E238AAF57001A4223 /* Homework2(Delegate).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework2(Delegate).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		027CBD51238AAF57001A4223 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027CBD53238AAF57001A4223 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +75,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024BDBE5238D01E40087174D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				024BDBE3238D01DA0087174D /* ISSKitchenProtocol.swift */,
+				027CBD73238AB346001A4223 /* ISSWaiterProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		024BDBEA238D06690087174D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				024BDBE8238D064F0087174D /* KitchenSpy.swift */,
+				024BDBE1238CFEE10087174D /* WaiterMock.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
 		027CBD45238AAF57001A4223 = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +117,8 @@
 				027CBD51238AAF57001A4223 /* AppDelegate.swift */,
 				027CBD53238AAF57001A4223 /* ViewController.swift */,
 				027CBD71238AB1E9001A4223 /* ISSWaiter.swift */,
-				027CBD73238AB346001A4223 /* ISSWaiterProtocol.swift */,
 				027CBD75238AB404001A4223 /* ISSKitchen.swift */,
+				024BDBE5238D01E40087174D /* Protocols */,
 				027CBD58238AAF59001A4223 /* Assets.xcassets */,
 				027CBD5A238AAF59001A4223 /* LaunchScreen.storyboard */,
 				027CBD5D238AAF59001A4223 /* Info.plist */,
@@ -97,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				027CBD66238AAF59001A4223 /* ViewControllerTests.swift */,
+				024BDBDF238CFE2B0087174D /* ISSWaiterTests.swift */,
+				024BDBEB238D069E0087174D /* ISSKitchenTests.swift */,
+				024BDBEA238D06690087174D /* Mocks */,
 				027CBD68238AAF59001A4223 /* Info.plist */,
 			);
 			path = "Homework2(Delegate)Tests";
@@ -155,7 +191,6 @@
 					};
 					027CBD61238AAF59001A4223 = {
 						CreatedOnToolsVersion = 10.3;
-						TestTargetID = 027CBD4D238AAF57001A4223;
 					};
 				};
 			};
@@ -204,6 +239,7 @@
 			files = (
 				027CBD77238AB68E001A4223 /* ISSWaiterProtocol.swift in Sources */,
 				027CBD76238AB404001A4223 /* ISSKitchen.swift in Sources */,
+				024BDBE4238D01DA0087174D /* ISSKitchenProtocol.swift in Sources */,
 				027CBD72238AB1E9001A4223 /* ISSWaiter.swift in Sources */,
 				027CBD54238AAF57001A4223 /* ViewController.swift in Sources */,
 				027CBD52238AAF57001A4223 /* AppDelegate.swift in Sources */,
@@ -214,7 +250,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024BDBDC238CFCE20087174D /* ISSWaiter.swift in Sources */,
+				024BDBE2238CFEE10087174D /* WaiterMock.swift in Sources */,
+				024BDBE6238D01F10087174D /* ISSKitchenProtocol.swift in Sources */,
+				024BDBE0238CFE2B0087174D /* ISSWaiterTests.swift in Sources */,
+				024BDBEC238D069E0087174D /* ISSKitchenTests.swift in Sources */,
+				024BDBDE238CFCE20087174D /* ISSKitchen.swift in Sources */,
+				024BDBE9238D064F0087174D /* KitchenSpy.swift in Sources */,
+				024BDBDB238CFCE20087174D /* ViewController.swift in Sources */,
 				027CBD67238AAF59001A4223 /* ViewControllerTests.swift in Sources */,
+				024BDBDD238CFCE20087174D /* ISSWaiterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +441,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5XUT7FZ7V;
 				INFOPLIST_FILE = "Homework2(Delegate)Tests/Info.plist";
@@ -409,7 +453,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Homework2(Delegate).app/Homework2(Delegate)";
 			};
 			name = Debug;
 		};
@@ -417,7 +460,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5XUT7FZ7V;
 				INFOPLIST_FILE = "Homework2(Delegate)Tests/Info.plist";
@@ -430,7 +472,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Homework2(Delegate).app/Homework2(Delegate)";
 			};
 			name = Release;
 		};

@@ -10,19 +10,23 @@ import XCTest
 @testable import Homework2_Delegate_
 
 class ViewControllerTests: XCTestCase {
+    var waiter: WaiterMock!
+    var client: ViewController!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        waiter = WaiterMock()
+        client = ViewController(waiter: waiter)
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        client = nil
+        waiter = nil
+        super.tearDown()
     }
 
     func testThatClientMakeOrderOnlyOnce() {
         // arrange
-        let waiter = WaiterMock()
-        let client = ViewController(waiter: waiter)
         let numberOfInteractions = 1
         
         // action
@@ -34,8 +38,6 @@ class ViewControllerTests: XCTestCase {
     
     func testThatClientCanLeaveTips() {
         // arrange
-        let waiter = WaiterMock()
-        let client = ViewController(waiter: waiter)
         let numberOfInteractions = 1
         let tips = 15
         
@@ -49,22 +51,4 @@ class ViewControllerTests: XCTestCase {
 
 }
 
-class WaiterMock: ISSWaiterProtocol {
-    var numberOfCalls = 0
-    
-    func takeOrder() {
-        numberOfCalls += 1
-        return
-    }
-    
-    func deliverOrder() {
-        return
-    }
 
-    var tips = 0
-    func takeTips(_ tips: Int) {
-        numberOfCalls += 1
-        self.tips += 15
-        return
-    }
-}

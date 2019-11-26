@@ -10,7 +10,7 @@ import Foundation
 
 
 /// Кухня
-class ISSKitchen {
+class ISSKitchen: ISSKitchenProtocol {
     
     var delegate: ISSWaiterProtocol?
     var isPrepared = false // готовность заказа

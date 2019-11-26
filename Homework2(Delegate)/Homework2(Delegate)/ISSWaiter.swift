@@ -9,10 +9,10 @@
 import Foundation
 
 
-/// Официант выступает посрдеником между кухней и клиентом
+/// Официант выступает посредеником между кухней и клиентом
 class ISSWaiter: ISSWaiterProtocol {
     
-    var kitchen: ISSKitchen
+    var kitchen: ISSKitchenProtocol
     var tips: Int = 0
     
     init() {
